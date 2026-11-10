@@ -1,1 +1,20 @@
-
+{
+  "name": "Android Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "jdkDistro": "tem"
+    },
+    "ghcr.io/devcontainers/features/android-sdk:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fwcd.kotlin",
+        "vscjava.vscode-java-pack",
+        "GitHub.copilot"
+      ]
+    }
+  }
+}
